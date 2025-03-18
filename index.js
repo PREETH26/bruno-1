@@ -10,7 +10,6 @@ app.use(express.json())
 connect();
 
 app.use("/api",route);
-
 app.get('/', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/index.html'));
 });
